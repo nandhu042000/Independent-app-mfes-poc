@@ -8,6 +8,7 @@ import { MyprofileComponent } from './components/myprofile/myprofile.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { ContactCardComponent } from './components/contactus/contact-card/contact-card.component';
+import { SocialLinksComponent } from './components/contactus/social-links/social-links.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContactCardComponent } from './components/contactus/contact-card/contac
     MyprofileComponent,
     ContactusComponent,
     LogoutComponent,
-    ContactCardComponent
+    ContactCardComponent,
+    SocialLinksComponent
   ],
   imports: [
     BrowserModule,
