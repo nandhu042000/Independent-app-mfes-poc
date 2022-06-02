@@ -1,1 +1,43 @@
-<app-table-report></app-table-report>
+
+<section id="student--report">
+    <div class="section--title">
+        <div class="dummy"></div>
+        <div class="title">
+            <h1>Students Usage Report</h1>
+            <p>(May 26,2022 - Jun 1,2022)</p>
+        </div>
+        <div class="btn--download">
+            <button class="btn--download--common" type="button">Download Mindspark Performance Report</button>
+        </div>
+    </div>
+    <div class="section--table--area">
+        <div class="commons">
+            <div class="search--filter">
+            <app-search></app-search>
+            <div class="filter">
+                <span>Filter by usage</span>
+                <app-filter></app-filter>
+            </div>
+            </div>
+            <div class="sort--add--download">
+                <div class="dropdown">
+                    <select class="">
+                        <option value="">Today</option>
+                        <option value="">Yesterday</option>
+                        <option value="">Last 7 Days</option>
+                        <option value="">Last 30 Days</option>
+                    </select>
+                    
+                </div>
+                <div class="add--column">
+                    <button (click)="AddColumn()">Add Column</button>
+                </div>
+                <div class="download--report">
+                    <button class="btn--download--common" type="button">Download Report</button>
+                </div>
+            </div>
+        </div>
+        <app-columns *ngIf="addColumn"></app-columns>
+
+    </div>
+</section>

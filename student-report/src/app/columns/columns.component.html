@@ -1,0 +1,9 @@
+<div class="column--group">
+    <ul *ngFor="let columns of columnDetails">
+        <h1>{{columns.header}}</h1>
+        <li *ngFor="let name  of columns.list.name ">
+            <input type="checkbox" name="">
+            <label>{{name}}</label>
+        </li>
+    </ul>
+</div>
