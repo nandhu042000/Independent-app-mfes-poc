@@ -1,3 +1,4 @@
+import { loadRemoteModule } from '@angular-architects/module-federation';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactusComponent } from './components/contactus/contactus.component';
@@ -18,7 +19,15 @@ const routes: Routes = [
     {path:'students', component: StudentsComponent},
     {path:'contact-us', component: ContactusComponent},
     {path:'my-profile', component: MyprofileComponent},
-    {path:'log-out', component: LogoutComponent}
+    {path:'log-out', component: LogoutComponent},
+    {path:'teacher/student',
+    loadChildren: () => loadRemoteModule({
+      remoteEntry: 'http://localhost:5000/remoteEntry.js',
+      type: 'module',
+      exposedModule: './Module'
+    })
+    .then(m => m.AppModule)
+  }
 ];
 
 @NgModule({
