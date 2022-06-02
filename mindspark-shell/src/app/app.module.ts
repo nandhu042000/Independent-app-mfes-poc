@@ -7,6 +7,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { MyprofileComponent } from './components/myprofile/myprofile.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { LogoutComponent } from './components/logout/logout.component';
+import { ContactCardComponent } from './components/contactus/contact-card/contact-card.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LogoutComponent } from './components/logout/logout.component';
     SidenavComponent,
     MyprofileComponent,
     ContactusComponent,
-    LogoutComponent
+    LogoutComponent,
+    ContactCardComponent
   ],
   imports: [
     BrowserModule,

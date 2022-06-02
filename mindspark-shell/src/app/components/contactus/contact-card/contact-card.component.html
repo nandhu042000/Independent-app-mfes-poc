@@ -1,0 +1,7 @@
+<div class="{{content.classname}} card--contact">
+    <h1>{{content.title}}</h1>
+    <a routerLink="" *ngIf="content.link;else notalink">{{content.data}}</a>
+    <ng-template #notalink>
+        <p>{{content.data}}</p>
+    </ng-template>
+</div>

@@ -1,0 +1,68 @@
+.wrapper{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+#contact--us{
+    width:100%;
+    min-height: 80vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#contact--us h1{
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.visit--us{
+    background:#fff;
+    margin:.5rem;
+    padding:.5rem;
+    text-align: center;
+    border-radius: 10px;
+    min-height: 15vh;
+    margin:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px #d1d5df80;
+    position:relative;
+
+}
+
+.visit--us::before{
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    background-image: url(https://learn.mindspark.in/Teacher/location.9cf9f01498021cce11ff.svg);
+    position: absolute;
+    top: -35px;
+    border-radius: 100%;
+    box-shadow: 0 10px 30px #d1d5df80;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    background-position-x: center;
+    background-position-y: center;
+    border: 1px solid gray;
+    background-size: 18px 30px;
+    
+}
+
+.visit--us p{
+    color:gray;
+    font-size: .8rem;
+    
+}
+
+.visit--us--card{
+    display: flex;
+    justify-content: space-between;
+
+}

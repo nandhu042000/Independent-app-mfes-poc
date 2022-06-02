@@ -1,1 +1,13 @@
-<p>contactus works!</p>
+<div class="wrapper">
+    <section id="contact--us">
+        <h1>Get in touch with us !</h1>
+        <div class="visit--us">
+            <h1>Visit us at</h1>
+            <p>Educational Initiatives Pvt. Ltd. A/201, Baleshwar Square, Opp. ISKCON Temple, S.G. Highway, Ahmedabad, Gujarat - 380015</p>
+        </div>
+        <div class="visit--us--card">
+        <app-contact-card *ngFor="let contents of content" [content]="contents"></app-contact-card>
+    
+        </div>
+    </section>
+</div>
