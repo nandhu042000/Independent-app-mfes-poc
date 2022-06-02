@@ -1,31 +1,32 @@
-<table style="width: 100%;overflow-x: auto;">
-  <tr style="height: 40px; background-color: rgb(207, 207, 207);">
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-  <tr style="background-color: rgb(207, 207, 207);">
-    <th style="width:180px;">Student Name</th>
-    <th>Average Usage</th>
-    <th>Total Questions Attempted</th>
-    <th>Accuracy</th>
-    <th>Actions</th>
-  </tr>
-  <tr *ngFor="let d of data">
-    <td>{{d.name}}</td>
-    <td>{{d.avgUsage}} minutes</td>
-    <td>{{d.questionsAttempted}}</td>
-    <td>{{d.accuracy}} %</td>
-    <td>
-      <a href="">Reset Password</a>&nbsp;&nbsp;
-      <a href="">View Report</a>&nbsp;&nbsp;
-      <a href="">More
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-        </svg>
-      </a>
-    </td>
-  </tr>
-</table>
+<div style="overflow-x: auto;">
+  <table style="width: 100%;">
+    <tr style="height: 40px; background-color: rgb(207, 207, 207);">
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr style="background-color: rgb(207, 207, 207);">
+      <th style="width:180px;">Student Name</th>
+      <th>Average Usage</th>
+      <th>Total Questions Attempted</th>
+      <th>Accuracy</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let d of data">
+      <td>{{d.name}}</td>
+      <td>{{d.avgUsage}} minutes</td>
+      <td>{{d.questionsAttempted}}</td>
+      <td>{{d.accuracy}} %</td>
+      <td>
+        <a href="">Reset Password</a>&nbsp;&nbsp;
+        <a href="">View Report</a>&nbsp;&nbsp;
+        <a href="">More
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </a>
+      </td>
+    </tr>
+  </table></div>

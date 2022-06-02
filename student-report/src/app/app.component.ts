@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'student-report';
+  addColumn:boolean = false;
+
+  AddColumn(){
+    this.addColumn = ! this.addColumn
+  }
 }

@@ -1,0 +1,15 @@
+.filter--btn button{
+    padding:.5rem .5rem;
+    background:#fff;
+    border:1px solid gray;
+    margin:.2rem;
+    border-radius: 5px;
+    color:gray;
+    font-size: .8rem;
+    cursor: pointer;
+
+}
+.filter--btn button:hover{
+    background:rgba(21, 59, 247, 0.782);
+    color:white;
+}
