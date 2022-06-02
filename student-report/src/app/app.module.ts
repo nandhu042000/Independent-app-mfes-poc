@@ -11,7 +11,7 @@ import { ColumnsComponent } from './columns/columns.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TableReportComponent
+    TableReportComponent,
     SearchComponent,
     FilterComponent,
     ViewsComponent,
