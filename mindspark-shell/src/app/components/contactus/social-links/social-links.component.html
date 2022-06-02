@@ -1,0 +1,10 @@
+<div class="social-icons">
+    <h1>Follow us</h1>
+    <ul>
+        <li *ngFor="let links of socialLinks">
+            <a href="{{links.url}}">
+                <i class="{{links.name}} icon" style="background:url({{links.url}}) center center no-repeat"></i>
+            </a>
+        </li>
+    </ul>
+</div>

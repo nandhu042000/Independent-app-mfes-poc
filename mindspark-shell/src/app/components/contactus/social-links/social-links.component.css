@@ -1,0 +1,20 @@
+.social-icons{
+    margin-top:30px;
+    text-align: center;
+}
+
+.social-icons h1{
+    font-size:1.5em;
+    font-weight: bolder;
+}
+
+.social-icons > ul {
+    display: flex;
+    list-style: none;
+}
+
+.icon{
+        width: 50px;
+        height: 49px;
+        display: block;
+}
