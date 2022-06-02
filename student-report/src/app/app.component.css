@@ -58,6 +58,7 @@
     width:100%;
     display:flex;
     justify-content:space-between;
+    flex-wrap: wrap;
 }
 
 .section--table--area{
@@ -75,6 +76,7 @@
     align-items:center;
     width:60%;
     flex:1;
+    flex-wrap: wrap;
 }
 
 .filter{
@@ -105,5 +107,25 @@
 .download--report button {
     padding:0.4rem;
 
+}
+
+@media screen and (max-width:700px){
+    .section--title{
+        flex-direction: column;
+    }
+    .commons{
+        flex-direction: column;
+    }
+    .search--filter{
+        width:100%;
+        
+    }
+
+}
+@media screen and (max-width:550px) {
+    .filter{
+        flex-direction: column;
+    align-items: flex-start;
+    }
 }
 
