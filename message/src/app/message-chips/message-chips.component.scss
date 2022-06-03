@@ -1,0 +1,23 @@
+
+
+.chips{
+    width:inherit;
+    display:flex;
+    align-items:center;
+    padding:.5rem;
+    transition:all .5s linear;
+    cursor: pointer;
+    &:hover{
+    background-color:rgba(0,0,0,.1);
+
+    }
+    .message--details{
+        margin-left: 1rem;
+        h2{
+            font-size: 1.2rem;
+        }
+        p{
+            color:gray;
+        }
+    }
+}
