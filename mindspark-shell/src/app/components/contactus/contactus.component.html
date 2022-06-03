@@ -6,8 +6,12 @@
             <p>Educational Initiatives Pvt. Ltd. A/201, Baleshwar Square, Opp. ISKCON Temple, S.G. Highway, Ahmedabad, Gujarat - 380015</p>
         </div>
         <div class="visit--us--card">
-        <app-contact-card *ngFor="let contents of content" [content]="contents"></app-contact-card>
-    
+        <app-contact-card *ngFor="let contents of content" [content]="contents">
+        </app-contact-card>
+            
+        </div>
+        <div class="social">
+            <app-social-links></app-social-links>
         </div>
     </section>
 </div>

@@ -4,6 +4,13 @@
   grid-template-columns: 4fr 4fr;
   font-size: 20pt;
   align-items: center;
+  overflow-x: auto;
+}
+
+.logo{
+  display:block;
+  color: white; font:900; font-family:Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
 }
 
 .navBar>div>a>img{
@@ -36,8 +43,26 @@
   position: relative;
   font-family: Arial;
   font: 13pt;
+ 
 }
 
-.navBar>div :focus{
+.custom-select > select {
+  
+  background-color: #71c044;
+  outline: none;
+  border:none;
+  color:#fff;
+  padding:.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.navBar>div:not(:first-child):focus{
   border-bottom: 3px solid rgb(255, 166, 0);
+}
+
+@media screen and (max-width:800px) {
+    .logo{
+      display: none;
+    }
 }

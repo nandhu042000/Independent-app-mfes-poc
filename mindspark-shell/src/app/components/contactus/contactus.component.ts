@@ -16,7 +16,7 @@ export class ContactusComponent implements OnInit {
     title:"Message us",
     data:"New message",
     link:true,
-    classname:"mesaage"
+    classname:"message"
   },
   {
     title:"Mail us",

@@ -1,21 +1,78 @@
 .card--contact{
-    width:15rem;
-    height:8rem;
-    min-height: 5rem;
-    background:#fff;
-    padding:.5rem;
+    background: no-repeat padding-box #fff;
     box-shadow: 0 10px 30px #d1d5df80;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin:0rem 1rem;
+    border-radius: 15px;
+    padding: 15px 30px;
+    height: 120px;
+    margin-top: 50px;
+    width: 16vw;
+    padding:30px;
+    position: relative;
+}
+
+.card--contact h1,.card--contact p,.card--contact a{
+    text-align: center;
+    display:block;
 }
 
 .card--contact h1{
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: bolder;
 }
+
+.card--contact p{
+    font-size: .8rem;
+    color: #858997;
+}
+
 .card--contact a{
     color:crimson;
+}
+
+.card--contact::before{
+    content: "";
+    background-color: #fff;
+    width:3rem;
+    height:3rem;
+    position: absolute;
+    top: -35px;
+    left:41%;
+    border-radius: 100%;
+    box-shadow: 0 10px 30px #d1d5df80;
+    border:2px solid #d1d5df80;
+}
+
+
+
+
+
+
+.tele::before{
+    background: url(	https://learn.mindspark.in/Teacher/talk_to_us.0e09bc9f4a705292baf7.svg) center center no-repeat;
+    background-color: #fff;
+    background-size:18px;
+
+}
+.message::before{
+    background: url(	https://learn.mindspark.in/Teacher/message_us.e80e736c16b46043be06.svg) center center no-repeat;
+    background-color: #fff;
+    background-size:18px;
+
+}
+.mail::before{
+    background: url(	https://learn.mindspark.in/Teacher/mail_us.82b7db6e2f467db831be.svg) center center no-repeat;
+    background-color: #fff;
+    background-size:18px;
+
+}
+
+@media screen and (max-width:1150px){
+    .card--contact{
+        width:25vw;
+    }
+}
+@media screen and (max-width:750px){
+    .card--contact{
+        width:80vw;
+    }    
 }
