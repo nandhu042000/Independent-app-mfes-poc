@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-profile';
+  toEdit = true;
+  change(){
+    this.toEdit=false
+  }
 }
