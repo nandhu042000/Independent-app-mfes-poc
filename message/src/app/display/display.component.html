@@ -1,0 +1,11 @@
+<section  id="message--display--area">
+    <div class="search--area">
+        <div class="search">
+        <input type="text" placeholder="Search for messages">
+        <div style="position: relative">
+            <i class="icon-search"></i>
+        </div>
+        </div>
+        <app-message-chips (previewMessage)="previewMessage($event)" (click)="send()"></app-message-chips>
+    </div>
+</section>

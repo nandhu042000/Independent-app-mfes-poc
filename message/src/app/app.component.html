@@ -1,0 +1,35 @@
+<section id="message--container">
+  <div class="top--area">
+    <h2>Messages</h2>
+    <div>
+      <button class="discard" *ngIf="prevMessageFlag" (click) = "discard()">Discard</button>
+    <button class="{{messageFlag ? 'discard' : 'new'}}" (click)="changeBtn()">{{btnName}}</button>
+    </div>
+  </div>
+  <div *ngIf="innerWidth >= 760;else smallview" class="message--container--wrapper">
+      <app-display (sentToApp)="sentToApp($event)"></app-display>
+      <ng-container *ngIf="messageFlag && !prevMessageFlag ">
+        <app-message-area ></app-message-area>
+      </ng-container>
+      <ng-container *ngIf="prevMessageFlag && !messageFlag">
+        <app-preview-message></app-preview-message>
+      </ng-container>
+      <ng-container *ngIf="!messageFlag && !prevMessageFlag ">
+        <div class="no--message">
+          <img src="	https://learn.mindspark.in/Teacher/empty_box.b9e1967c52e781a5dfaf.svg">
+          <h2>Select a conversation to view your messages.</h2>
+        </div>
+      </ng-container>
+  </div>
+
+  <ng-template #smallview>
+    <app-display (sentToApp)="sentToApp($event)" *ngIf="smallViewFlag"></app-display>
+    <ng-container *ngIf="messageFlag && !prevMessageFlag ">
+      <app-message-area ></app-message-area>
+    </ng-container>
+    <ng-container *ngIf="prevMessageFlag && !messageFlag">
+      <app-preview-message></app-preview-message>
+    </ng-container>
+
+  </ng-template>
+</section>

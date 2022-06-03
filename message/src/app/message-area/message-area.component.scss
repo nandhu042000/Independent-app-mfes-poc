@@ -1,0 +1,92 @@
+#write--message{
+    width:49vw;
+    background: no-repeat  #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    border-radius: 10px;
+    h3{
+        color:rgb(0, 142, 230);
+        padding: 0.5rem;
+
+        
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        .inp{
+            background: #f7f7f7;
+            border-radius: 5px;
+            border: none;
+            margin-top: 1rem;
+            padding:.5rem 0.5rem;
+            outline: none;
+        }
+        .text--area{
+            width: 47vw;
+            position: relative;
+            .message{
+                width:inherit;
+                min-height: 60vh;
+                resize: none;
+
+
+            }
+            .send--attach{
+                position: absolute;
+                bottom: 15px;
+                display: flex;
+                justify-content:space-between;
+                width: 100%;
+                padding:.5rem;
+                .attachment--container{
+                    .file{
+                        background:url(https://learn.mindspark.in/Teacher/blue_attachment.9ecf844b515d73caf0d1.svg) center center no-repeat;
+                        width:20px !important;
+                        height:20px !important;
+                        position: absolute;
+
+                    }
+                    span{
+                        position: absolute;
+                        left:2rem;
+
+                    }
+                    .inp--file{
+                        position: absolute;
+                        opacity: 0;
+                    }
+                }
+                button{
+                    background: no-repeat padding-box #71c044;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0;
+                    color: #fff;
+                    border: 1px solid #71c044;
+                    padding: .3rem 2rem;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 740px) {
+    #write--message {
+        width: 90vw;
+        margin:auto;
+        form{
+            .text--area{
+                width: 84vw;
+            }
+        }
+    }
+}
