@@ -18,7 +18,6 @@ const routes: Routes = [
   {path:'worksheets', component: WorksheetsComponent},
   {path:'students', component: StudentsComponent},
   {path:'contact-us', component: ContactusComponent},
-  {path:'my-profile', component: MyprofileComponent},
   {path:'log-out', component: LogoutComponent},
   {path:'teacher/message',
   loadChildren: () => loadRemoteModule({

@@ -31,7 +31,7 @@
 <!-- right-div -->
 <div class="right-view">
   <div class="card1">
-    <div style="display: flex;flex-direction:row">
+    <div id="fnamelname">
       <div>
         First Name *<br>
         <input type="text" [readonly]="toEdit" value="UmeshJoshi">
@@ -41,10 +41,10 @@
         <input type="text" value="teacher">
       </div>
     </div>
-    <div style="display: flex;flex-direction:row">
+    <div id="fnamelname">
       <div>
         Gender *<br>
-        <select name="gender" id="" [disabled]="toEdit">
+        <select name="gender" id="" [disabled]="toEdit" style="padding: 0;">
           <option value="Male">Male</option>
           <option value="Female">Female</option>
         </select> 
@@ -54,7 +54,7 @@
         <input type="text" [readonly]="toEdit" value="umesh.joshi@ei-india.com">
       </div>
     </div>
-    <div style="display: flex;flex-direction:row">
+    <div id="fnamelname">
       <div>
         DOB (dd/mm/yyyy) *<br>
         <input type="date" [disabled]="toEdit" value="07-02-2001">
