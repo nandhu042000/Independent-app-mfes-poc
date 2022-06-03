@@ -11,23 +11,39 @@ import { TopicsComponent } from './components/topics/topics.component';
 import { WorksheetsComponent } from './components/worksheets/worksheets.component';
 
 const routes: Routes = [
-    {path:'', component: HomeComponent},
-    {path:'home', component: HomeComponent},
-    {path:'topics', component: TopicsComponent},
-    {path:'homework', component: HomeworkComponent},
-    {path:'worksheets', component: WorksheetsComponent},
-    {path:'students', component: StudentsComponent},
-    {path:'contact-us', component: ContactusComponent},
-    {path:'my-profile', component: MyprofileComponent},
-    {path:'log-out', component: LogoutComponent},
-    {path:'teacher/student',
-    loadChildren: () => loadRemoteModule({
-      remoteEntry: 'http://localhost:5000/remoteEntry.js',
-      type: 'module',
-      exposedModule: './Module'
-    })
-    .then(m => m.AppModule)
-  }
+  {path:'', component: HomeComponent},
+  {path:'home', component: HomeComponent},
+  {path:'topics', component: TopicsComponent},
+  {path:'homework', component: HomeworkComponent},
+  {path:'worksheets', component: WorksheetsComponent},
+  {path:'students', component: StudentsComponent},
+  {path:'contact-us', component: ContactusComponent},
+  {path:'my-profile', component: MyprofileComponent},
+  {path:'log-out', component: LogoutComponent},
+  {path:'teacher/message',
+  loadChildren: () => loadRemoteModule({
+    remoteEntry: 'http://localhost:3000/remoteEntry.js',
+    type: 'module',
+    exposedModule: './Module'
+  })
+  .then(m => m.AppModule)
+  },
+  {path:'teacher/student',
+  loadChildren: () => loadRemoteModule({
+    remoteEntry: 'http://localhost:5000/remoteEntry.js',
+    type: 'module',
+    exposedModule: './Module'
+  })
+  .then(m => m.AppModule)
+  },
+  {path:'teacher/my-profile',
+  loadChildren: () => loadRemoteModule({
+    remoteEntry: 'http://localhost:7000/remoteEntry.js',
+    type: 'module',
+    exposedModule: './Module'
+  })
+  .then(m => m.AppModule)
+  },
 ];
 
 @NgModule({
