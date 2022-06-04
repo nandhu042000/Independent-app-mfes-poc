@@ -1,0 +1,39 @@
+.card{
+    background: #fff;
+    width:100%;
+    border: 1px solid #ececee;
+    padding: 21px 25px;
+    height: 40vh;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px #d1d5df80;
+    margin: 10px 10px;
+
+}
+
+.card--header{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+}
+
+.card--header p{
+    font-size: .8rem;
+    color:gray;
+}
+
+.pie--chart{
+    cursor: pointer;
+    width: 60px!important;
+    height: 60px!important;
+    display: inline-block;
+    background-size: contain!important;
+    flex-shrink: 0!important;
+    background: url(https://learn.mindspark.in/Teacher/report.df97edb104192ea9690e.svg) center center no-repeat;
+
+
+}
+
+
+
+
+
