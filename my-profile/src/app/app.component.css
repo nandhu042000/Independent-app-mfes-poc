@@ -16,7 +16,7 @@
 
 .right-view{
   float: left;
-  width: 73%;
+  width: 72%;
   position: relative;
   /* border: 2px solid red; */
   margin-left: 10px;
@@ -68,6 +68,7 @@ body{
   /* height:620px; */
   color:#686666;
   border: 1px solid #e7e7e7;
+  background-color: white;
 }
 
 #hello{
@@ -115,7 +116,7 @@ input, select{
   font-size: 10pt;
   align-items: center;
   justify-content: center;
-  width: 34vw;
+  width: 33vw;
   margin: 5px;
   padding: 10px;
 }
@@ -128,7 +129,7 @@ option{
   position: relative;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .left-view, .right-view {   
     width: 100%;
     padding: 10px;
@@ -145,7 +146,7 @@ option{
   } 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .card1{
     height:auto;
     width: auto;

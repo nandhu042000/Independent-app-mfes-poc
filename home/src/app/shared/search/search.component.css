@@ -1,0 +1,9 @@
+.input--search {
+        background: url(https://learn.mindspark.in/Teacher/search_grey.a56d2a5ccce8df72e3af.svg) 95% center no-repeat #fff;
+        border-radius: 5px;
+        width: 100%;
+        height: 38px;
+        padding: 10px;
+        border:none;
+        outline: none;
+    }
