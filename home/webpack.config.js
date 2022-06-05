@@ -38,7 +38,7 @@ module.exports = {
         name: "worksheet",
         filename: "remoteEntry.js",
         exposes: {
-            './Module': './src/app/worksheet/worksheet.module.ts',
+            './WorksheetModule': './src/app/worksheet/worksheet.module.ts',
         },     
         
         // For hosts (please adjust)

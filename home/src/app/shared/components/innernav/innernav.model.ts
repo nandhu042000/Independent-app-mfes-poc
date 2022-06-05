@@ -15,10 +15,21 @@ export const innerNav = {
         ],
         btnName:"Activate Topics"
     },
-    Homework:{
-        list:[{
-            
-        }]
+    Worksheet:{
+        list:[
+            {
+                listName:"Active Worksheet",
+                url:"/teacher/worksheet/active"
+            },
+            {
+                listName:"Deactivated Worksheet",
+                url:"/teacher/worksheet/deactivate"
+            },{
+                listName:"Other worksheet",
+                url:"active"
+            }
+        ],
+        btnName:"create worksheet"
     }
 
 }
