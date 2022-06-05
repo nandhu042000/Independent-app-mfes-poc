@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./worksheet.component.css']
 })
 export class WorksheetComponent {
-  title = 'home';
+  title = 'worksheet';
 }
