@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidenav',
@@ -9,8 +10,13 @@ export class SidenavComponent implements OnInit {
   name: string = "Umeshjoshi Teacher"
   email: string ="umeshjoshi@ei-india.com"
   space : string = ""
-  constructor() { }
-
+  constructor(private router: Router) { }
+  logOut(){
+    localStorage.clear()
+    localStorage.setItem('auth','false')
+    this.router.navigate(['login'])
+    location.reload()
+  }
   ngOnInit(): void {
   }
 

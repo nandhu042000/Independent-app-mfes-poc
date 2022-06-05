@@ -8,7 +8,7 @@
     <p id="login">Login</p>
     <p style="font-size: 8pt; color:#7a7575">Username</p>
     <input type="text" name="username" id="username" [(ngModel)]="login.username" required>
-    <button id="next" (click)="this.emailEntered=!this.emailEntered" [disabled]="">
+    <button id="next" (click)="onNextClicked()">
       Next
     </button>
   </div>
@@ -23,7 +23,7 @@
       <p style="font-size: 8pt; color:#7a7575">Enter your Password</p>
     </div>
     <input type="password" name="password" id="password" [(ngModel)]="login.password" style="border: none; border-bottom:1px solid black; background-color: #f6f6f6; width: 23vw;">
-    <button id="next">
+    <button id="next" (click)="checkCredentials()">
       Login
     </button>
   </div>

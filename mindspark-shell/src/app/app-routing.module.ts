@@ -1,6 +1,7 @@
 import { loadRemoteModule } from '@angular-architects/module-federation';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthGaurd } from './authguard.service';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { HomeComponent } from './components/home/home.component';
 import { HomeworkComponent } from './components/homework/homework.component';
@@ -19,7 +20,19 @@ const routes: Routes = [
   {path:'students', component: StudentsComponent},
   {path:'contact-us', component: ContactusComponent},
   {path:'log-out', component: LogoutComponent},
+  {
+    path:"login",
+    loadChildren: () => loadRemoteModule({
+      remoteEntry: 'http://localhost:9000/remoteEntry.js',
+      type: 'module',
+      exposedModule: './Module'
+    })
+    .then(m => m.AppModule)
+    
+  },
   {path:'teacher/message',
+  canActivate:[AuthGaurd] ,
+  canActivateChild:[AuthGaurd],
   loadChildren: () => loadRemoteModule({
     remoteEntry: 'http://localhost:3000/remoteEntry.js',
     type: 'module',
@@ -28,6 +41,8 @@ const routes: Routes = [
   .then(m => m.AppModule)
   },
   {path:'teacher/student',
+  canActivate:[AuthGaurd] ,
+  canActivateChild:[AuthGaurd],
   loadChildren: () => loadRemoteModule({
     remoteEntry: 'http://localhost:5000/remoteEntry.js',
     type: 'module',
@@ -36,6 +51,8 @@ const routes: Routes = [
   .then(m => m.AppModule)
   },
   {path:'teacher/my-profile',
+  canActivate:[AuthGaurd] ,
+  canActivateChild:[AuthGaurd],
   loadChildren: () => loadRemoteModule({
     remoteEntry: 'http://localhost:7000/remoteEntry.js',
     type: 'module',
@@ -44,6 +61,8 @@ const routes: Routes = [
   .then(m => m.AppModule)
   },
   {path:'teacher/topics',
+  canActivate:[AuthGaurd] ,
+  canActivateChild:[AuthGaurd],
   loadChildren: () => loadRemoteModule({
     remoteEntry: 'http://localhost:8081/remoteEntry.js',
     type: 'module',
@@ -52,6 +71,8 @@ const routes: Routes = [
   .then(m => m.TopicModule)
   },
   {path:'teacher/worksheet',
+  canActivate:[AuthGaurd] ,
+  canActivateChild:[AuthGaurd],
   loadChildren: () => loadRemoteModule({
     remoteEntry: 'http://localhost:8081/remoteEntry.js',
     type: 'module',
@@ -60,6 +81,8 @@ const routes: Routes = [
   .then(m => m.WorksheetModule)
   },
   {path:'teacher/homework',
+  canActivate:[AuthGaurd] ,
+  canActivateChild:[AuthGaurd],
   loadChildren: () => loadRemoteModule({
     remoteEntry: 'http://localhost:8081/remoteEntry.js',
     type: 'module',

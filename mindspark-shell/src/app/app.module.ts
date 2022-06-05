@@ -9,6 +9,7 @@ import { ContactusComponent } from './components/contactus/contactus.component';
 import { LogoutComponent } from './components/logout/logout.component';
 import { ContactCardComponent } from './components/contactus/contact-card/contact-card.component';
 import { SocialLinksComponent } from './components/contactus/social-links/social-links.component';
+import { AuthGaurd } from './authguard.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { SocialLinksComponent } from './components/contactus/social-links/social
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AuthGaurd],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
