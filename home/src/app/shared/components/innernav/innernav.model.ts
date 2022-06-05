@@ -40,7 +40,7 @@ export const innerNav = {
             },
             {
                 listName:"Deactivated Worksheet",
-                url:"/teacher/worksheet/deactivate"
+                url:"/teacher/worksheet/deactive"
             },{
                 listName:"Other worksheet",
                 url:"active"
