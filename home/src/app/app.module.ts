@@ -7,6 +7,7 @@ import { TopicModule } from './topic/topic.module';
 import { InnernavComponent } from './shared/innernav/innernav.component';
 import { SearchComponent } from './shared/search/search.component';
 import { CardComponent } from './shared/card/card.component';
+import { WorksheetModule } from './worksheet/worksheet.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,9 @@ import { CardComponent } from './shared/card/card.component';
   imports: [
     BrowserModule,
     TopicModule,
-    AppRoutingModule
+    WorksheetModule,
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

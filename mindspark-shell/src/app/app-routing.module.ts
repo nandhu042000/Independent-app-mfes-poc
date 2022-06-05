@@ -51,6 +51,14 @@ const routes: Routes = [
   })
   .then(m => m.TopicModule)
   },
+  {path:'teacher/worksheet',
+  loadChildren: () => loadRemoteModule({
+    remoteEntry: 'http://localhost:8081/remoteEntry.js',
+    type: 'module',
+    exposedModule: './Module'
+  })
+  .then(m => m.WorksheetModule)
+  },
 ];
 
 @NgModule({

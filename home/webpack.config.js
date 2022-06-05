@@ -33,7 +33,19 @@ module.exports = {
         filename: "remoteEntry.js",
         exposes: {
             './Module': './src/app/topic/topic.module.ts',
-        },        
+        },      
+          
+        name: "worksheet",
+        filename: "remoteEntry.js",
+        exposes: {
+            './Module': './src/app/worksheet/worksheet.module.ts',
+        },
+        
+        name: "homework",
+        filename: "remoteEntry.js",
+        exposes: {
+            './Module': './src/app/homework/homework.module.ts',
+        },
         
         // For hosts (please adjust)
         // remotes: {
