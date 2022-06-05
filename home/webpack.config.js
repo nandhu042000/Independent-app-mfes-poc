@@ -31,15 +31,17 @@ module.exports = {
         // For remotes (please adjust)
         name: "home",
         filename: "remoteEntry.js",
-        exposes: {
+        exposes: [{
             './Module': './src/app/topic/topic.module.ts',
-        },      
+        },{
+          './WorksheetModule': './src/app/worksheet/worksheet.module.ts',
+      }],      
           
-        name: "worksheet",
-        filename: "remoteEntry.js",
-        exposes: {
-            './WorksheetModule': './src/app/worksheet/worksheet.module.ts',
-        },     
+        // name: "worksheet",
+        // filename: "remoteEntry.js",
+        // exposes: {
+        //     './WorksheetModule': './src/app/worksheet/worksheet.module.ts',
+        // },     
         
         // For hosts (please adjust)
         // remotes: {
