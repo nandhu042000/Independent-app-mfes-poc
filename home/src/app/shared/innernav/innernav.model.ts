@@ -14,6 +14,11 @@ export const innerNav = {
             }
         ],
         btnName:"Activate Topics"
+    },
+    Homework:{
+        list:[{
+            
+        }]
     }
 
 }
