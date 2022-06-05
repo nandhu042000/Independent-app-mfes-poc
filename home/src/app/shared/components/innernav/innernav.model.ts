@@ -15,7 +15,6 @@ export const innerNav = {
         ],
         btnName:"Activate Topics"
     },
-<<<<<<< HEAD:home/src/app/shared/innernav/innernav.model.ts
     Homework:{
         list:[
             {
@@ -32,7 +31,7 @@ export const innerNav = {
             }
         ],
         btnName:"Create Homework"
-=======
+    },
     Worksheet:{
         list:[
             {
@@ -48,7 +47,6 @@ export const innerNav = {
             }
         ],
         btnName:"create worksheet"
->>>>>>> df131e468a21d00a1d467b82a864eb85c776a23a:home/src/app/shared/components/innernav/innernav.model.ts
     }
 
 }

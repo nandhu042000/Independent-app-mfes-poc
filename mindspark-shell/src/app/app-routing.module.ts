@@ -55,9 +55,17 @@ const routes: Routes = [
   loadChildren: () => loadRemoteModule({
     remoteEntry: 'http://localhost:8081/remoteEntry.js',
     type: 'module',
-    exposedModule: './Module'
+    exposedModule: './WorksheetModule'
   })
   .then(m => m.WorksheetModule)
+  },
+  {path:'teacher/homework',
+  loadChildren: () => loadRemoteModule({
+    remoteEntry: 'http://localhost:8081/remoteEntry.js',
+    type: 'module',
+    exposedModule: './HomeWorkModule'
+  })
+  .then(m => m.HomeworkModule)
   },
 ];
 

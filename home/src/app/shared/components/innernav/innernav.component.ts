@@ -18,7 +18,7 @@ export class InnernavComponent implements OnInit {
         this.nav = innerNav.Topics.list
         this.btnName = innerNav.Topics.btnName
       }
-      if(this.router.url.includes('homeworks')){
+      if(this.router.url.includes('homework')){
         this.nav = innerNav.Homework.list
         this.btnName = innerNav.Homework.btnName
       }
