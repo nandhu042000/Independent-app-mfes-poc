@@ -1,0 +1,71 @@
+.left-view{
+  background-color: #ffffff;
+  width: 50%;
+  height: 98vh;
+  float: left;
+}
+
+.right-view{
+  background-color: #f6f6f6;
+  width: 50%;
+  height:100vh;
+  float: left;
+}
+
+.get-started{
+  margin-left: 9vw;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 35vh;
+}
+
+#login{
+  color:#ba1e1e;
+  font-size: 20pt;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#lets-get{
+  font-weight: bold;
+  font-size: 25pt;
+}
+
+#username{
+  border: none;
+  border-bottom:1px solid black;
+  background-color: #f6f6f6;
+  width: 23vw;
+}
+
+#next{
+  color: white;
+  font-weight: 400;
+  background-color: #ba1e1e;
+  border-radius: 30px;
+  font-weight: bold;
+  border:none;
+  height: 40px ;
+  width: 160px;
+  margin-left: 11.5vw;
+  margin-top: 20px;
+}
+
+#pwdDiv{
+  display: flex;
+  flex-direction:row;
+  align-items:stretch;
+}
+
+img{
+  height: 100vh;
+  width:50vw
+}
+
+@media (max-width: 800px){
+  .left-view, .right-view{
+    width: 100%;
+  }
+  img{
+    width: 100vw;
+  }
+}
