@@ -3,64 +3,108 @@
   display: flex;
   padding: 5px;
   margin-bottom: 10px;
-  background-color:#f0ecec;
+  background-color:#ededed;
 }
 
 .left-view{
   float: left;
   width: 25%;
   height: 100%;
+  /* border: 2px solid red; */
+  margin-left: 10px;
 }
 
 .right-view{
   float: left;
-  width: 75%;
+  width: 73%;
   position: relative;
+  /* border: 2px solid red; */
+  margin-left: 10px;
+}
+
+.my-profile-banner{
+  padding:15px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12pt;
+}
+
+body{
+  border: 5px solid red;
+}
+
+.change-pwd-button{
+  border: 2px solid #f0643c;
+  background-color: white;
+  border-radius: 5px;
+  width: 80%;
+  margin-top: 20px;
+  padding: 6px;
+  color: #f0643c;
+  align-items: center;
 }
 
 .card {
-  margin-top: -10px;
+  /* margin-top: -10px; */
   background-color: white;
   padding: 20px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
+  height: 75vh;
   /* height:620px; */
 }
 
 .card1{
-  margin-top: -10px;
-  background-color: white;
+  /* margin-top: -10px; */
+  /* background-color: black; */
   padding: 20px;
   border-radius: 5px;
-  height: 85vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   /* height:620px; */
-  color:#686666
+  color:#686666;
+  border: 1px solid #e7e7e7;
+}
+
+#hello{
+  margin-top: 10px;
+  background-color:#f0643c;
+  border-radius:5px;
+  color:white;
+  width:80%;
+  border: none;
+  padding: 7px;
+  font-weight: bold;
+  padding: 8px;
+}
+
+#save{
+  font-size: 10pt;
+  margin: 10px;
+  background-color:#b0acac;
+  padding: 4px 33px;
+  border-radius: 5px;
+  border: 2px solid #b0acac;
+  color: white;
+  font-weight: bold;
+}
+
+#discard{
+  border: 1px solid#f0643c;
+  border-radius:5px;
+  padding:4px 25px;
+  font-size:10pt;
+  color: #f0643c;
+  background-color: white;
 }
 
 #fnamelname{
   display: flex;
   flex-direction: row;
-}
-
-@media (max-width: 900px) {
-  .left-view, .right-view {   
-    width: 100%;
-    padding: 10px;
-  }
-  .card{
-    height:auto;
-  }
-  #hello{
-    width: 10vw;
-  }
-  #fnamelname{
-    flex-direction:column;
-  }
 }
 
 input, select{
@@ -81,8 +125,24 @@ option{
 }
 
 .footer{
-  position: absolute;
-  bottom: 40px;
+  position: relative;
+}
+
+@media (max-width: 900px) {
+  .left-view, .right-view {   
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+  }
+  .card{
+    height:auto;
+  }
+  #hello, .change-pwd-button{
+    width: 85vw;
+  }
+  #fnamelname{
+    flex-direction:column;
+  } 
 }
 
 @media (max-width: 900px) {

@@ -2,10 +2,10 @@
   <svg routerLink="/home" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
   </svg>
-  <div style="padding:15px; width: 100%; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12pt;">My Profile</div>
+  <div class="my-profile-banner">My Profile</div>
 </div>
 
-
+<div id="background">
 <!-- leftdiv -->
 <div class="left-view">
   <div class="card">
@@ -19,10 +19,10 @@
       </svg>
     </div>
 
-    <button id="hello" (click)="this.change()" style="margin-top: 10px; background-color:#f0643c; border-radius:5px; color:white; width:80%; border: none;padding: 7px;font-weight: bold;padding: 8px;">
+    <button id="hello" (click)="this.change()">
       Edit Profile
     </button>
-    <button style="border: 2px solid #f0643c;background-color: white; border-radius: 5px; width: 80%;margin-top: 20px;padding: 6px;color: #f0643c;align-items: center;">
+    <button class="change-pwd-button">
       Change Password
     </button>
   </div>
@@ -64,15 +64,15 @@
         <input type="tel" [disabled]="toEdit" value="986-532-7845">
       </div>
     </div>
-    
+  </div>    
 
 
     
     <!-- footer -->
     <div>
       <div class="footer">
-      <button style="border: 1px solid#f0643c;border-radius:5px; padding:4px 25px;font-size:10pt;color: #f0643c; background-color: white;">Discard</button>
-      <button style="font-size: 10pt;margin: 10px;background-color:#b0acac; padding: 4px 33px;border-radius: 5px; border: 2px solid #b0acac;color: white;font-weight: bold;">Save</button>
+      <button id="discard">Discard</button>
+      <button id="save">Save</button>
     </div>
   </div>
 
