@@ -14,6 +14,23 @@ export const innerNav = {
             }
         ],
         btnName:"Activate Topics"
+    },
+    Homework:{
+        list:[
+            {
+                listName:"Active Homework",
+                url:"/teacher/homeworks/active"
+            },
+            {
+                listName:"Deactivated Homework",
+                url:"/teacher/homeworks/deactivate"
+            },
+            {
+                listName:"My Saved Homework",
+                url:"/teacher/homeworks/saved-homework"
+            }
+        ],
+        btnName:"Create Homework"
     }
 
 }
