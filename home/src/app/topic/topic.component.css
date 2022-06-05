@@ -1,0 +1,41 @@
+#deactive--topic{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    padding:1rem;
+}
+
+.search--btn--container{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.search--wrapper{
+    width: 30vw;
+}
+
+.priority--btn button{
+    background: no-repeat padding-box #ee643f;
+    border: 1px solid #ee643f;
+    color: #fff;
+    text-align: center;
+    width:8rem;
+    padding:.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: .8rem;
+
+}
+
+.card--container{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding:.5rem;
+    width:100%;
+}
+
+.w-33{ 
+    width:33%;
+}

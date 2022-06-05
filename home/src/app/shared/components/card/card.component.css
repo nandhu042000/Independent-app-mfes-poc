@@ -10,6 +10,7 @@
 
 }
 
+
 .card--header{
     display: flex;
     width: 100%;
@@ -33,6 +34,80 @@
 
 }
 
+.progress--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.percent--progress{
+    display:inline-block;
+    padding:.5rem;
+    border-radius: 100%;
+    width:6.5rem;
+    height:6.5rem;
+    border:6px solid rgba(128, 128, 128,.3);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.percent--progress p,.completed > p{
+    display:inline-block;
+    word-break: break-word;
+    text-align: center;
+}
+
+.percent--progress > p > span,.completed > p >span {
+    font-weight: bolder;
+}
+
+.completed{
+
+}
+
+.other--btns{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.other--btns > button:first-child{
+    min-width: 105px;
+    height: 32px;
+    border: 1px solid #ee643f;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 13px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: .13px;
+    color: #ee643f;
+    margin: .2rem;
+}
+.other--btns > button:nth-child(2){
+    border: 1px solid transparent;
+    background-color: #ee643f;
+    font-weight: 700;
+    color: #fff;
+    min-width: 105px;
+    height: 32px;
+    border-radius: 5px;
+    font-size: 13px;
+    outline: 0;
+    cursor: pointer;
+    letter-spacing: .13px;
+    margin: .2rem;
+
+}
+
+.other--btns > .dots >.three--dots{
+    background: url(	https://learn.mindspark.in/Teacher/three_dots.137732a42e71a8dcf760.svg) center center no-repeat;
+    width: 25px!important;
+    height: 25px!important;
+    display: inline-block;
+    background-size: contain!important;
+    margin: .2rem;
+
+}
 
 
 

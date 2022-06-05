@@ -13,16 +13,30 @@ export class InnernavComponent implements OnInit {
   btnName:string = "";
   constructor(private router:Router) { }
 
-  ngOnInit(): void {
-      if(this.router.url.includes('topics')){
-        this.nav = innerNav.Topics.list
-        this.btnName = innerNav.Topics.btnName
-      }
-      if(this.router.url.includes('homework')){
-        this.nav = innerNav.Homework.list
-        this.btnName = innerNav.Homework.btnName
-      }
+
+  innerNavCreate(){
+    if(this.router.url.includes('topics')){
+      this.nav = innerNav.Topics.list
+      this.btnName = innerNav.Topics.btnName
+    }
+    else if(this.router.url.includes('homework')){
+      this.nav = innerNav.Homework.list
+      this.btnName = innerNav.Homework.btnName
+    }
+    else if(this.router.url.includes('worksheet')){
+      this.nav = innerNav.Worksheet.list
+      this.btnName = innerNav.Worksheet.btnName
+    }
   }
+
+  
+  ngOnInit(): void {
+      
+    this.innerNavCreate()
+
+  }
+
+ 
 
   btnAction(){
     

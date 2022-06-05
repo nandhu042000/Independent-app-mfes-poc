@@ -1,4 +1,4 @@
-#active--topic{
+#deactive--worksheet{
     display:flex;
     flex-direction: column;
     width: 100%;
@@ -9,14 +9,11 @@
     width: 100%;
     display: flex;
     justify-content:space-between;
-    padding: 1rem;
 }
 
 .search--wrapper{
     width: 30vw;
 }
-
-
 
 .priority--btn button{
     background: no-repeat padding-box #ee643f;
@@ -42,7 +39,6 @@
 .w-33{ 
     width:33%;
 }
-
 @media screen and (max-width:900px){
     .w-33{
         width:100%;
