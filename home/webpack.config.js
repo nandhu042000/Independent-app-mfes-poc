@@ -35,13 +35,11 @@ module.exports = {
             './Module': './src/app/topic/topic.module.ts',
         },{
           './WorksheetModule': './src/app/worksheet/worksheet.module.ts',
-      }],      
-          
-        // name: "worksheet",
-        // filename: "remoteEntry.js",
-        // exposes: {
-        //     './WorksheetModule': './src/app/worksheet/worksheet.module.ts',
-        // },     
+        },
+        {
+          './HomeWorkModule' : './src/app/homework/homework.module.ts'
+        }
+      ],      
         
         // For hosts (please adjust)
         // remotes: {
