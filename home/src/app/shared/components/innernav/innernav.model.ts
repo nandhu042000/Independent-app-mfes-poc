@@ -19,15 +19,15 @@ export const innerNav = {
         list:[
             {
                 listName:"Active Homework",
-                url:"/teacher/homeworks/active"
+                url:"/teacher/homework/active"
             },
             {
                 listName:"Deactivated Homework",
-                url:"/teacher/homeworks/deactivate"
+                url:"/teacher/homework/deactivate"
             },
             {
                 listName:"My Saved Homework",
-                url:"/teacher/homeworks/saved-homework"
+                url:"/teacher/homework/saved-homework"
             }
         ],
         btnName:"Create Homework"
@@ -36,11 +36,11 @@ export const innerNav = {
         list:[
             {
                 listName:"Active Worksheet",
-                url:"/teacher/worksheet/active"
+                url:"/teacher/worksheets/active"
             },
             {
                 listName:"Deactivated Worksheet",
-                url:"/teacher/worksheet/deactive"
+                url:"/teacher/worksheets/deactive"
             },{
                 listName:"Other worksheet",
                 url:"active"

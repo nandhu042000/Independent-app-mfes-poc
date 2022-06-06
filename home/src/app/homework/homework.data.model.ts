@@ -5,7 +5,7 @@ export const HomeworkServiceData = [
         class:"6a",
         homeworkList:{
             activeHomework:["Integer HW","Fraction HW","Addition HW"],
-            deactivatedHomework:["substraction HW","Algebra HW","Statistics HW"]
+            deactivatedHomework:["Subtraction HW","Algebra HW","Statistics HW"]
         }
     },
     {
