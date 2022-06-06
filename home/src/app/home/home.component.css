@@ -54,16 +54,19 @@
     min-height: 50vh;
     border-radius: 20px 20px 0px 0px;
     margin-top: .5rem;
+    background-color: #f7f7f7;
+
+
 }
 .home--card--container{
     display: flex;
     width: 100%;
     overflow: auto;
+    
 }
 
 .topics--header{
     padding:10px 15px;
-    background-color: #f7f7f7;
 
     display: flex;
     justify-content:space-between;
