@@ -29,7 +29,7 @@ export class AppComponent {
       localStorage.setItem("auth","true");
       localStorage.setItem("class","6a");
       localStorage.setItem("user_type","teacher");
-      this.router.navigate(['/home']);
+      this.router.navigate(['teacher/home']);
       // location.reload();
     }
   }

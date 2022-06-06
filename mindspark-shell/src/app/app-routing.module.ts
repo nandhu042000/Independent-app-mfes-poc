@@ -12,14 +12,8 @@ import { TopicsComponent } from './components/topics/topics.component';
 import { WorksheetsComponent } from './components/worksheets/worksheets.component';
 
 const routes: Routes = [
-  {path:'', component: HomeComponent},
-  {path:'home', component: HomeComponent},
-  {path:'topics', component: TopicsComponent},
-  {path:'homework', component: HomeworkComponent},
-  {path:'worksheets', component: WorksheetsComponent},
-  {path:'students', component: StudentsComponent},
+  {path:"",redirectTo:"teacher/home",pathMatch:"full"},
   {path:'contact-us', component: ContactusComponent},
-  {path:'log-out', component: LogoutComponent},
   {
     path:"login",
     loadChildren: () => loadRemoteModule({
@@ -70,7 +64,7 @@ const routes: Routes = [
   })
   .then(m => m.TopicModule)
   },
-  {path:'teacher/worksheet',
+  {path:'teacher/worksheets',
   canActivate:[AuthGaurd] ,
   canActivateChild:[AuthGaurd],
   loadChildren: () => loadRemoteModule({
@@ -90,10 +84,20 @@ const routes: Routes = [
   })
   .then(m => m.HomeworkModule)
   },
+  {path:'teacher/home',
+  canActivate:[AuthGaurd] ,
+  canActivateChild:[AuthGaurd],
+  loadChildren: () => loadRemoteModule({
+    remoteEntry: 'http://localhost:8081/remoteEntry.js',
+    type: 'module',
+    exposedModule: './HomeModule'
+  })
+  .then(m => m.HomeModule)
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{onSameUrlNavigation: 'reload'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

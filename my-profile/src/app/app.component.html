@@ -34,11 +34,11 @@
     <div id="fnamelname">
       <div>
         First Name *<br>
-        <input type="text" [readonly]="toEdit" value="UmeshJoshi">
+        <input type="text" [readonly]="toEdit" value="{{this.details.firstName}}">
       </div>
       <div>
         Last Name * <br>
-        <input type="text" value="teacher">
+        <input type="text" value="{{this.details.lastName}}">
       </div>
     </div>
     <div id="fnamelname">
@@ -51,7 +51,7 @@
       </div>
       <div>
         Email ID * <br>
-        <input type="text" [readonly]="toEdit" value="umesh.joshi@ei-india.com">
+        <input type="text" [readonly]="toEdit" value="{{this.details.email}}">
       </div>
     </div>
     <div id="fnamelname">
@@ -61,7 +61,7 @@
       </div>
       <div>
         Phone * <br>
-        <input type="tel" [disabled]="toEdit" value="986-532-7845">
+        <input type="tel" [disabled]="toEdit" value="{{this.details.mobile}}">
       </div>
     </div>
   </div>    
