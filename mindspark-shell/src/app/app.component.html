@@ -12,11 +12,11 @@
 
   <div>
     <div class="custom-select" style="width:130px; font-size: 13pt;">
-      <select style="font-size: 13pt;">
-        <option value="0">CLASS 6 A</option>
-        <option value="1">CLASS 6 B</option>
-        <option value="2">CLASS 6 C</option>
-        <option value="3">CLASS 6 D</option>
+      <select style="font-size: 13pt;" (change)="selectClass($event)" #select>
+        <option value="6a">CLASS 6 A</option>
+        <option value="6b">CLASS 6 B</option>
+        <option value="6c">CLASS 6 C</option>
+        <option value="6d">CLASS 6 D</option>
       </select>
     </div>
     <a routerLink="/home" routerLinkActive="active">Home</a>
