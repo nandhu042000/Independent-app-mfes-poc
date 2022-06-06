@@ -3,17 +3,11 @@
         <div class="search--wrapper">
         <app-search></app-search>
         </div>
-
+        <div class="priority--btn">
+        <button>Mark as Priority</button>
+        </div>
     </div>
-    <div class="card--container">
-        
-            <app-card class="w-33"></app-card>
-            <app-card class="w-33"></app-card>
-            <app-card class="w-33"></app-card>
-            <app-card class="w-33"></app-card>
-
-
-        
-        
+    <div class="card--container">      
+        <app-card class="w-33" *ngFor="let data of currentData" [data]="data"></app-card>
     </div>
 </section>

@@ -18,6 +18,7 @@ import { DeactiveWorksheetComponent } from './deactive-worksheet/deactive-worksh
     CommonModule,
     WorksheetRoutingModule,
     SharedModule
-  ]
+  ],
+  providers: [WorksheetModule]
 })
 export class WorksheetModule { }

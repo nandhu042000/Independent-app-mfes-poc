@@ -5,6 +5,7 @@ import { HomeworkRoutingModule } from './homework-routing-module';
 import { SharedModule } from '../shared/shared.module';
 import { ActiveHomeworkComponent } from './active-homework/active-homework.component';
 import { DeactivateHomeworkComponent } from './deactivate-homework/deactivate-homework.component';
+import { HomeworkServiceService } from './homework-service.service';
 
 
 
@@ -19,6 +20,7 @@ import { DeactivateHomeworkComponent } from './deactivate-homework/deactivate-ho
     CommonModule,
     HomeworkRoutingModule,
     SharedModule
-  ]
+  ],
+  providers: [HomeworkServiceService]
 })
 export class HomeworkModule { }
