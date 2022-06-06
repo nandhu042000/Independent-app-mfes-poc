@@ -27,8 +27,6 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
         library: { type: "module" },
-
-        // For remotes (please adjust)
         name: "home",
         filename: "remoteEntry.js",
         exposes: [{
@@ -38,6 +36,8 @@ module.exports = {
         },
         {
           './HomeWorkModule' : './src/app/homework/homework.module.ts'
+        },{
+          './HomeModule':"./src/app/home/home.module.ts"
         }
       ],      
         

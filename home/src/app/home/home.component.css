@@ -1,0 +1,23 @@
+.home--container{
+    width:100%;
+    min-height: 80vh;
+    padding:.5rem;
+}
+.home--container > h1{
+    font-size: 1.4rem;
+}
+
+.dev--wrapper{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.dev--wrapper p{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:crimson;
+}
