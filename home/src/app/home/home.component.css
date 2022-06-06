@@ -5,6 +5,9 @@
 }
 .home--container > h1{
     font-size: 1.4rem;
+    font-weight:bolder;
+    color:#333;
+    margin-top: 1rem;
 }
 
 .dev--wrapper{
@@ -20,4 +23,135 @@
     font-size: 1.8rem;
     font-weight: bold;
     color:crimson;
+}
+
+.home--wrapper,.home--right
+,.home--left{
+    min-height: 80vh;
+}
+.home--wrapper{
+    width: 100%;
+    display: flex;
+}
+
+.home--right{
+    width: 30%;
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home--left{
+    width: 80%;
+    
+}
+
+.home--topics{
+    width: 100%;
+    min-height: 50vh;
+    border-radius: 20px 20px 0px 0px;
+    margin-top: .5rem;
+}
+.home--card--container{
+    display: flex;
+    width: 100%;
+    overflow: auto;
+}
+
+.topics--header{
+    padding:10px 15px;
+    background-color: #f7f7f7;
+
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.topics--header h3{
+    font-size: 1rem;
+}
+
+.btn--active{
+    background: no-repeat padding-box #71c044;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #fff;
+    border: 1px solid #71c044;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+
+.home--card--collapse{
+    display: flex;
+    justify-content:space-between;
+    background-color: #ededed;
+    margin-bottom: 1rem;
+    margin-left: .8rem;
+
+
+}
+.default--template:not(:first-child){
+    margin:.2rem .5rem;
+
+}
+.default--template{
+    width: 40%;
+    min-height: 50vh;
+    background-color: #fff;
+    margin:.2rem 0rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.common {
+    width: 90%;
+    height: 30vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.common p,.default--template p{
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+    .home--container > h1{
+    font-size: 1rem;
+    text-align: center;
+
+    }
+    .home--wrapper{
+        flex-direction: column;
+
+    }
+    .home--right,.common,.home--left,.default--template{
+        width: 100%;
+    }
+
+    .home--card--collapse{
+        flex-direction: column;
+    }
+    .default--template{
+        margin: .6rem auto;
+    }
+    .default--template:not(:first-child){
+        margin:.6rem auto;
+    
+    }
 }

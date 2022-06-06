@@ -1,7 +1,47 @@
 <div class="home--container">
 <h1>Welcome {{user.firstName}} {{user.lastName}} ! to your classroom</h1>
-    <div class="dev--wrapper">
+    <!-- <div class="dev--wrapper">
         <img src="https://learn.mindspark.in/Teacher/22.9aa96056e58cfaa34a77.svg">
         <p>UI yet to be implemented</p>
+    </div> -->
+
+    <div class="home--wrapper">
+        <div class="home--left">
+            <div class="home--topics">
+               <div class="topics--header">
+                   <h3>Topics</h3>
+                   <button class="btn--active">Activate Topic</button>
+               </div>
+               <div class="home--card--container">
+                   <app-card *ngFor="let data of currentData" [data]="data"></app-card>
+               </div>
+
+               <div class="home--card--collapse">
+                   <div class="default--template">
+                    <p>Class usage</p>
+                   </div>
+                   <div class="default--template">
+                    <p>Home Work</p>
+
+                </div>
+                <div class="default--template">
+                    <p>Worksheet</p>
+
+                </div>
+
+               </div>
+            </div>
+        </div>
+        <div class="home--right">
+            <div class="common">
+                <p>Live class</p>
+            </div>
+            <div class="common">
+                <p>Alerts</p>
+            </div>
+            <div class="common">
+                <p>Achievements</p>
+            </div>
+        </div>
     </div>
 </div>

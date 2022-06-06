@@ -1,0 +1,20 @@
+{
+  "name": "independent-app-mfes-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "all": "concurrently \"cd home && ng serve\" \"cd login && ng serve\" \"cd message && ng serve\" \"cd mindspark-shell && ng serve\" \"cd my-profile && ng serve\" \"cd student-report && ng serve\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bhuvaneshwararaja/Independent-app-mfes-poc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhuvaneshwararaja/Independent-app-mfes-poc/issues"
+  },
+  "homepage": "https://github.com/bhuvaneshwararaja/Independent-app-mfes-poc#readme"
+}

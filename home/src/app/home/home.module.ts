@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
+import { TopicServiceService } from '../topic/topic-service.service';
 
 
 
@@ -12,6 +13,7 @@ import { HomeRoutingModule } from './home-routing.module';
     CommonModule,
     SharedModule,
     HomeRoutingModule
-  ]
+  ],
+  providers:[TopicServiceService]
 })
 export class HomeModule { }
