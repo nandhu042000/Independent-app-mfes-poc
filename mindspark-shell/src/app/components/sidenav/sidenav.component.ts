@@ -14,8 +14,7 @@ export class SidenavComponent implements OnInit {
   logOut(){
     localStorage.clear()
     localStorage.setItem('auth','false')
-    this.router.navigate(['login'])
-    location.reload()
+    this.router.navigate(['/login'])
   }
   ngOnInit(): void {
   }
