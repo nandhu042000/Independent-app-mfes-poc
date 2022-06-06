@@ -7,6 +7,7 @@ import { ActiveTopicComponent } from './active-topic/active-topic.component';
 import { TopicComponent } from './topic.component';
 import { DeactivedTopicComponent } from './deactived-topic/deactived-topic.component';
 import { SharedModule } from '../shared/shared.module';
+import { TopicServiceService } from './topic-service.service';
 
 
 
@@ -21,6 +22,7 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
     TopicRoutingModule,
     SharedModule
-  ]
+  ],
+  providers: [TopicServiceService]
 })
 export class TopicModule { }
