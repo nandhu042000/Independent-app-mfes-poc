@@ -1,16 +1,18 @@
 <div class="left-view">
-  <img src="../assets/login-left-view.png" alt="">
+  <img src="https://learn.mindspark.in/Student/ei_ms_logo.44f4cd24c749290a0198.svg" alt="">
 </div>
 <div class="right-view">
 
   <div class="get-started" [hidden]="emailEntered">
     <p id="lets-get">Let's get started!</p>
     <p id="login">Login</p>
-    <p style="font-size: 8pt; color:#7a7575">Username</p>
-    <input type="text" name="username" id="username" [(ngModel)]="login.username" required>
-    <button id="next" (click)="onNextClicked()">
-      Next
-    </button>
+    <p style="font-size: .8rem; color:#7a7575">Username</p>
+    <div class="flex--btn">
+      <input type="text" name="username" id="username" class="inp" [(ngModel)]="login.username" required>
+      <button id="next" (click)="onNextClicked()">
+        Next
+      </button>
+    </div>
   </div>
 
   <div class="get-started" [hidden]="!emailEntered">
@@ -20,12 +22,14 @@
       <svg (click)="this.emailEntered=!this.emailEntered" style="cursor:pointer;background-color:#00416a; color:white; font-weight:bold;padding:3px ;border-radius:10px" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
       </svg>&nbsp;&nbsp;
-      <p style="font-size: 8pt; color:#7a7575">Enter your Password</p>
+      <p style="font-size: .8rem; color:#7a7575">Enter your Password</p>
     </div>
-    <input type="password" name="password" id="password" [(ngModel)]="login.password" style="border: none; border-bottom:1px solid black; background-color: #f6f6f6; width: 23vw;">
-    <button id="next" (click)="checkCredentials()">
-      Login
-    </button>
+    <div class="flex--btn">
+      <input type="password" name="password" id="password" class="inp" [(ngModel)]="login.password" >
+      <button id="next" (click)="checkCredentials()">
+        Login
+      </button>
+    </div>
   </div>
   
 </div>
